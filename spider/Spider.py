@@ -16,7 +16,7 @@ def get_page(url: str):
     except requests.exceptions.RequestException as e:
         # A serious problem happened, like an SSLError or InvalidURL #return "Error: {}".format(e)
         raise e
-
+ 
 
 def search_spider(query:str, max_titles:int=6, max_pages:int=1):
     page = 1
